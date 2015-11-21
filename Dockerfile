@@ -8,4 +8,4 @@ WORKDIR /opt/dynamodb_local
 
 EXPOSE 8000
 
-ENTRYPOINT ["/usr/bin/java", "-Djava.library.path=/opt/dynamodb_local/DynamoDBLocal_lib", "-jar", "DynamoDBLocal.jar", "-sharedDb"]
+ENTRYPOINT ["java", "-Djava.library.path=/opt/dynamodb_local/DynamoDBLocal_lib", "-jar", "DynamoDBLocal.jar", "-sharedDb"]
